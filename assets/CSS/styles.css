@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+      --coffee: #342e37;
+      --tea: #dcf2b0;
+      --green: #5e8c61;
+}
+
+body {
+    color: var(--coffee);
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Header Styles */
+header {
+    padding: 20px 35px;
+    background-color: var(--coffee);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    top: 0;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 40px;
+    color: var(--tea);
+    margin: 0;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--tea);
+}
+
+header nav {
+    margin: 5px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-size: 24px;
+}
+
+header nav ul li a:hover {
+    background-color: var(--tea);
+    color: var(--green);
+    border-radius: 15px;
+}
+
+/* Hero Styles */
+.hero {
+    background-image: url("../images/forest-hero.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-attachment: fixed;
+    height: 300px;
+}
+
+.hero-quote {
+    color: var(--green);
+    background-color: var(--tea);
+    font-size: 24px;
+    width: 25%;
+    border-radius: 25px;
+    position: relative;
+    text-align: center;
+}
