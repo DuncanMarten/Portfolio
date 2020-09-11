@@ -92,6 +92,7 @@ header nav ul li a:hover {
     position: absolute;
     bottom: 10px;
     right: 10px;
+    margin: 10px;
 }
 
 /* About Me Styles */
@@ -104,7 +105,6 @@ header nav ul li a:hover {
 }
 
 .about-item {
-    float: right;
     position: relative;
     width: 42%;
     font-size: 24px;
@@ -232,6 +232,82 @@ header nav ul li a:hover {
     header {
         padding-bottom: 10px;
         justify-content: center;
-        position: relative;
+    }
+
+    .section-title {
+        border-right: none;
+        border-bottom: 3px solid var(--green);
+        display: block;
+        justify-self: center;
+        height: unset;
+        width: 100%;
+        margin: 10px 0 0 0;
+    }
+
+    /* Media Style for Nav Bar */
+    header nav ul {
+        justify-content: center;
+    }
+
+    header nav ul li a:hover {
+        background-color: unset;
+        color: var(--tea);
+
+    }
+    /* Media Style for About Section */
+    .about {
+        align-items: unset;
+        justify-content: unset;
+    }
+    .about-item {
+        width: 100%;
+        margin: 10px;
+        text-align: justify;
+    }
+
+    .about > div:first-of-type, .work > div:first-of-type, .contact > div:first-of-type {
+        margin: 0 auto;
+    }
+    .about-img{
+        width: 100%;
+        margin: 0;
+    }
+
+    /* Media Styles for Work Section */
+    .work-grid-wrapper {
+        width: 100%;
+    }
+
+    .work-grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .link::after {
+        opacity: 0;
+    }
+
+    .work-grid-item:hover {
+        width: 300px;
+        height: 300px;
+    }
+
+    /* Media Styles for Contact Me Section */
+    .contact {
+        display: grid;
+        margin: 0 auto;
+        justify-content: unset;
+    }
+
+    .contact-text {
+        display: unset;
+    }
+
+    .contact-item {
+        text-align: center;
+    }
+
+    .contact-item a:hover {
+        color: var(--tea);
     }
 }
