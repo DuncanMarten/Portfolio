@@ -15,6 +15,17 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
+.section-title {
+    font-size: 32px;
+    border-right: 3px solid var(--green);
+    color: var(--green);
+    margin: 20px;
+    padding: 10px;
+    height: 400px;
+    width: 175px;
+}
+
+
 /* Header Styles */
 header {
     padding: 20px 35px;
@@ -80,4 +91,98 @@ header nav ul li a:hover {
     border-radius: 25px;
     position: relative;
     text-align: center;
+}
+
+/* About Me Styles */
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--tea);
+}
+
+.about-item {
+    float: right;
+    position: relative;
+    width: 42%;
+    font-size: 24px;
+}
+
+.about-item p {
+    margin: 20px 0;
+}
+
+.about-img {
+    width: 60%;
+    margin: 20px 0;
+    margin-right: 50px;
+    float: right;
+    border-radius: 15px;
+}
+
+/* Work Styles */
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--coffee);
+    color: var(--tea);
+}
+
+.work-grid-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 80%;
+    margin: 20px;
+}
+
+.work-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5px;
+}
+
+.work-grid-item {
+    width: 300px;
+    height: 300px;
+}
+
+.work-grid-item p {
+    background-color: var(--green);
+}
+
+.grid-img {
+    width: 300px;
+    height: 300px;
+}
+
+/* Contact Styles */
+.contact {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--tea);
+}
+
+.contact-text {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contact-item {
+  margin: 20px 30px;
+  padding: 20px;
+  font-size: 24px;
+  background-color: var(--coffee);
+  border-radius: 20px;
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: var(--tea);
 }
