@@ -143,7 +143,7 @@ header nav ul li a:hover {
 .work-grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 10px;
     width: 100%;
 }
@@ -160,6 +160,16 @@ header nav ul li a:hover {
     background-image: url(../images/run-buddy.png);
     background-size: cover;
     grid-column: 1 / 3;
+}
+
+.one-stop {
+    background-image: url(../images/group_project1.png);
+    background-size: cover;
+}
+
+.chains {
+    background-image: url(../images/group_project2.png);
+    background-size: cover;
 }
 
 .access {
